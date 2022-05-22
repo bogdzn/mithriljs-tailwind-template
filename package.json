@@ -1,0 +1,36 @@
+{
+  "name": "mithril-tailwind-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bogdzn/mithril-tailwind-template.git",
+  "author": "winds0r <wontsleep@protonmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.6.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "mithril": "^2.2.0"
+  },
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development --node-env=development",
+    "watch": "webpack --watch --mode=development --node-env=development",
+    "lint": "eslint .eslintrc.js"
+  }
+}
